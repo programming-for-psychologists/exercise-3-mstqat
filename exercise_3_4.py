@@ -1,12 +1,6 @@
-"""4 - Simply randomizing the enture list messes up the block structure
- creating the possibility that participants will see the same trial multiple 
- times in a row. For this part, randomize the trials within each block before 
- printing the list.
-"""
 import random
 
 # Generate a trial list
-                
 # generate blocks of trials
 # middleList = [] | innerList = [] | numRepetitions = integer
 def repetition(innerList, middleList, blockNumList):
@@ -28,3 +22,9 @@ for block in trialList:
     random.shuffle(block)
     for trial in block:
         print ", ".join(trial)
+
+"""Instructions 4 - Simply randomizing the enture list messes up the block structure
+ creating the possibility that participants will see the same trial multiple 
+ times in a row. For this part, randomize the trials within each block before 
+ printing the list.
+"""
